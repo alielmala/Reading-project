@@ -64,7 +64,6 @@ h1 {
  .place i {
     margin-left: -30px;
     cursor: pointer; 
-    float: left;
 }
  a{
      display: block;
