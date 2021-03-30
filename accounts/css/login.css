@@ -28,6 +28,7 @@ h1 {
     width: 95%;
     color: #797979;
     font-size: 15px;
+
     
  }
  .login-fields:focus{
@@ -86,4 +87,9 @@ h1 {
 hr{
     margin-top: 20px;
     width: 300px
+}
+@media screen and( max-width: 600px){
+hr{
+width: 50px; 
+}
 }
