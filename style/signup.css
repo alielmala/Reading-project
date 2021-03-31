@@ -1,6 +1,8 @@
 body{
     background-color: #EBEBEB;
     font-family: 'Raleway';
+    overflow: hidden;
+    padding:20px;
 }
 section {
     padding: 50px 50px 50px 50px;
@@ -20,23 +22,26 @@ h1 {
      
 }
  .signup-fields{
+     display: inline-block;
     margin-top: 5px;
     margin-bottom: 12px;
     padding-left: 20px;
     border: 1px solid #ccc;
     height: 40px;
-    width: 375px;
+    width: 380px;
     color: #797979;
     font-size: 15px;
+    
     
  }
  .signup-fields:focus{
     border: 1px solid #4935D4;
     }
-    input[type="text"], input[type="password"],input[type="number"],input[type="email"] { 
-        outline: none;
-    }
-    input, button, submit { border:none; } 
+input[type="text"], input[type="password"],input[type="number"],input[type="email"] { 
+    outline: none;
+}
+
+input, button, submit { border:none; } 
 
  input[type=submit]{
      height: 40px; 
@@ -58,16 +63,18 @@ h1 {
  }
 .small-fields-container{
     display: flex;
+    
 }
-#username{
-    width: 180px;
-}
-#id {
+#id{
+    width: 173px;
     margin-left: 10px;
-    width: 160px;
 }
+
 #id-label{
     margin-left: 10px;
+}
+#username {
+    width: 173px;
 }
  span {
      color: rgb(124, 124, 124);
@@ -89,9 +96,50 @@ h1 {
 
 hr{
     margin-top: 20px;
-    width: 300px
+    width: 70%;
+    text-align: center;
 }   
 
-form > div {
-    max-width:40% ;
-}
+@media screen and (max-width: 550px) {
+   body{
+   } 
+    section{
+        padding: 30px 30px 30px 30px;
+        margin: 20px;
+        margin-left: auto; margin-right: auto;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .signup-fields{
+        width: 92%;
+        margin-left: auto; margin-right: auto;
+        font-size: 13px;
+  }
+
+    .small-fields-container{
+        display: block;
+    }
+    #username{
+        width: 92%;
+    }
+    #id{
+        width: 92%;
+        margin-left: 0px;
+    }
+    #id-label{
+        margin-left: 0%;
+    }
+   
+    input[type="submit"]{
+        width: 70%;
+    }
+    input[type="text"]{
+        display: inline-block;
+    }
+    .signup-labels{
+        font-size: 12px;
+    }
+    
+  }
+  
