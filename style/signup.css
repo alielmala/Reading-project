@@ -1,7 +1,6 @@
 body{
     background-color: #EBEBEB;
     font-family: 'Raleway';
-    overflow: hidden;
     padding:20px;
 }
 section {
@@ -76,6 +75,9 @@ input, button, submit { border:none; }
 #username {
     width: 173px;
 }
+select {
+    width: 404px !important;
+}
  span {
      color: rgb(124, 124, 124);
      font-size: 13px;
@@ -101,8 +103,7 @@ hr{
 }   
 
 @media screen and (max-width: 550px) {
-   body{
-   } 
+ 
     section{
         padding: 30px 30px 30px 30px;
         margin: 20px;
@@ -112,11 +113,13 @@ hr{
         font-size: 20px;
     }
     .signup-fields{
-        width: 92%;
+        width: 92% ;
         margin-left: auto; margin-right: auto;
         font-size: 13px;
   }
-
+select {
+    width: 100% !important;
+}
     .small-fields-container{
         display: block;
     }

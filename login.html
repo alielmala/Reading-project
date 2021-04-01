@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style/login.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 
 
@@ -18,23 +18,23 @@
 
 <body>
     <section class="container-flex">
-        <h1> ACCOUNT LOGIN</h1><br>
+        <h1> Account Log in</h1><br>
         <form action="">
-            <label class="login-labels" for="username">USERNAME</label>
+            <label class="login-labels" for="username">Username</label>
             <input class="login-fields" type="text" id="username" name="username" required>
             <div class="place">
-            <label class="login-labels" for="password">PASSWORD</label>
-            <input class="login-fields" type="password" id="password" name="password" required>
-            <i class="far fa-eye" id="togglePassword"></i>
+                <label class="login-labels" for="password">Password</label>
+                <input class="login-fields" type="password" id="password" name="password" required>
+                <i class="far fa-eye" id="togglePassword"></i>
 
-        </div>
+            </div>
 
             <span> <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label></span>
 
             <input type="submit" value="Log In">
-            <a href="">Forgot Password ?</a>
+            <a href="reset-password.html">Forgot Password ?</a>
 
         </form>
         <div>
@@ -44,17 +44,27 @@
 
 
     </section>
+    <footer>
+        <div>
+      <p><i class="far fa-copyright"> </i> </p>
+        <p>all copyrights reserved</p>
+        <p>front-end developer</p> 
+        <p><a target="_blank" href="https://www.linkedin.com/in/alielmala/">Ali Elmala</a></p>
+        <p>back-end developer</p>
+        <p><a target="_blank" href="https://www.linkedin.com/in/abdelhameed-ghazy-1a50b619a/">Abdelhameed Ghazy</a></p>
+            </div>
+    </footer>
 </body>
 <script>
     const togglePassword = document.querySelector('#togglePassword');
-const password = document.querySelector('#password');
-togglePassword.addEventListener('click', function (e) {
-    // toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-    // toggle the eye slash icon
-    this.classList.toggle('fa-eye-slash');
-});
+    const password = document.querySelector('#password');
+    togglePassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('fa-eye-slash');
+    });
 
 </script>
 
