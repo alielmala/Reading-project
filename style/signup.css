@@ -10,9 +10,10 @@ section {
     background-color: white;
     max-width: 400px; 
     margin-left: auto; margin-right: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 h1 {
-    color: #4935D4;
+    color: #333333;
     font-weight: 700;
 }
 .signup-labels {
@@ -34,7 +35,7 @@ h1 {
     
  }
  .signup-fields:focus{
-    border: 1px solid #4935D4;
+    border: 1px solid #222629;
     }
 input[type="text"], input[type="password"],input[type="number"],input[type="email"] { 
     outline: none;
@@ -46,7 +47,7 @@ input, button, submit { border:none; }
      height: 40px; 
      border-radius: 50px;
      color:white ;
-     background-color: #4935D4;
+     background-color: #333333;
      width: 250px;
      display: block;
      margin-left: auto;margin-right: auto;
@@ -54,7 +55,7 @@ input, button, submit { border:none; }
 
  }
  input[type=submit]:hover{
-    background-color: #3a26b9;
+    background-color: #222629;
     color: white;
  }
  input[type=submit]:focus{
@@ -93,7 +94,7 @@ select {
         
 }
  a:hover {
-     color: #4935d4;
+     color: #222629;
  }
 
 hr{

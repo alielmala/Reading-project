@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'djangoblog/main.css' %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style/recommendation.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+          <div class="container">
+            <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Django Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+              aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+              <div class="navbar-nav mr-auto">
+                <a class="nav-item ml-5 nav-link fas fa-home fa-lg" title="home" href="{% url 'blog-home' %}"></a>
+                <a class="nav-item  ml-5  nav-link fas fa-address-card fa-lg" title="about"
+                  href="{% url 'blog-about' %}"></a>
+              </div>
+    
+              <div class="navbar-nav">
+                <a class="nav-item nav-link ml-5 fas fa-plus-square fa-lg" title="create post"
+                  href=""></a>
+    
+                <a class="nav-item nav-link ml-5 fas fa-user fa-lg" title="profile" href=""></a>
+                <a class="nav-item nav-link ml-5 fas fa-sign-out-alt fa-lg" title="logout" href=""></a>
+                <!-- <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <a href="#">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                        </a>
+                        <ul class="list-inline mt-3">
+                            <li class="list-inline-item"><i class="fas fa-user"></i> Metus Vulputate</li>
+                            <li class="list-inline-item"><i class="far fa-clock"></i> June 22, 2020</li>
+                        </ul>
+                        <hr>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="btn btn-outline-dark my-2" href="#" role="button">Downlod</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <a href="#">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                        </a>
+                        <ul class="list-inline mt-3">
+                            <li class="list-inline-item"><i class="fas fa-user"></i> Metus Vulputate</li>
+                            <li class="list-inline-item"><i class="far fa-clock"></i> June 22, 2020</li>
+                        </ul>
+                        <hr>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="btn btn-outline-dark my-2" href="#" role="button">Downlod</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <a href="#">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                        </a>
+                        <ul class="list-inline mt-3">
+                            <li class="list-inline-item"><i class="fas fa-user"></i> Metus Vulputate</li>
+                            <li class="list-inline-item"><i class="far fa-clock"></i> June 22, 2020</li>
+                        </ul>
+                        <hr>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="btn btn-outline-dark my-2" href="#" role="button">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+</html>
