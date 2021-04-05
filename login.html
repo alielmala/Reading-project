@@ -9,7 +9,7 @@
     <link rel="short icon" href="assets/tab-logo.svg">
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 
@@ -17,21 +17,19 @@
 </head>
 
 <body>
-    <section class="container-flex">
-        <h1> Account Log in</h1><br>
+    <section class=" register-section container-flex">
+        <h1 class="register-h1"> Account Log in</h1><br>
         <form action="">
-            <label class="login-labels" for="username">Username</label>
-            <input class="login-fields" type="text" id="username" name="username" required>
+            <label class="register-labels" for="username">Username</label>
+            <input class="register-fields" type="text" id="username" name="username" required>
             <div class="place">
-                <label class="login-labels" for="password">Password</label>
-                <input class="login-fields" type="password" id="password" name="password" required>
+                <label class="register-labels" for="password">Password</label>
+                <input class="register-fields" type="password" id="password" name="password" required>
                 <i class="far fa-eye" id="togglePassword"></i>
 
             </div>
 
-            <span> <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label></span>
+   
 
             <input type="submit" value="Log In">
             <a href="reset-password.html">Forgot Password ?</a>
@@ -44,16 +42,7 @@
 
 
     </section>
-    <footer>
-        <div>
-      <p><i class="far fa-copyright"> </i> </p>
-        <p>all copyrights reserved</p>
-        <p>front-end developer</p> 
-        <p><a target="_blank" href="https://www.linkedin.com/in/alielmala/">Ali Elmala</a></p>
-        <p>back-end developer</p>
-        <p><a target="_blank" href="https://www.linkedin.com/in/abdelhameed-ghazy-1a50b619a/">Abdelhameed Ghazy</a></p>
-            </div>
-    </footer>
+
 </body>
 <script>
     const togglePassword = document.querySelector('#togglePassword');

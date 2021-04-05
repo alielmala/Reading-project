@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/profile.css">
+    <link rel="stylesheet" href="style/main.css">
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,9 +13,9 @@
   <link rel="stylesheet" type="text/css" href="{% static 'djangoblog/main.css' %}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      
 </head>
 <body>
-     <!-- Navigation -->
   <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
       <div class="container">
@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav mr-auto">
             <a class="nav-item ml-5 nav-link fas fa-home fa-lg" title="home" href="home.html"></a>
-            <a class="nav-item  ml-5  nav-link fas fa-book fa-lg" title="recommendations"
+            <a class="nav-item  ml-5  nav-link fas fa-book fa-lg" title="recommendation"
               href="recommendation.html"></a>
           </div>
 
@@ -54,6 +54,7 @@
                       <h4>John Doe</h4>
                       <p class="text-secondary mb-1">ID: 51910708</p>
                       <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+                      <div> <span>30</span> <i class="fas fa-thumbs-up mb-3"></i> </div>
                       <button class="btn btn-dark">Follow</button>
                       <button class="btn btn-outline-dark">Like</button>
                     </div>
@@ -128,9 +129,10 @@
         <div class="row ">
           <!-- Post Content Column -->
           <div class="col-lg-8 ml-auto ">
-            <div class="card my-3">
-                <h5 class="card-header">Your Posts</h5>
-                <article class="media content-section mt-3">
+                <h5 class="">Last Posts</h5>
+                <hr>
+               
+              <article class="media content-section mt-3">
               <img class="rounded-circle article-img" src="image-placeholder-title.jpg">
               <div class="media-body">
                 <div class="article-metadata">
@@ -141,7 +143,6 @@
                 <p class="article-content">this is a breif about the post</p>
               </div>
             </article>
-              </div>
             <article class="media content-section mt-3">
               <img class="rounded-circle article-img" src="image-placeholder-title.jpg">
               <div class="media-body">
@@ -158,10 +159,10 @@
               <img class="rounded-circle article-img" src="image-placeholder-title.jpg">
               <div class="media-body">
                 <div class="article-metadata">
-                  <a class="mr-2" href="{%url 'user-posts' post.author.username %}">Ali Elmala</a>
+                  <a class="mr-2" href="">Ali Elmala</a>
                   <small class="text-muted">March 2,2020</small>
                 </div>
-                <h2><a class="article-title" href="{%url 'post-detail' post.id %}">Hello world</a></h2>
+                <h2><a class="article-title" href="">Hello world</a></h2>
                 <p class="article-content">this is a breif about the post</p>
               </div>
             </article>
